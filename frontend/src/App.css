@@ -6,8 +6,17 @@
   border-bottom: 5px solid #024859;
 }
 
+.border {
+  border: 1px solid #024859 !important;
+}
+
 .blueclass {
   background: #024859;
+}
+
+.blueclass:hover {
+  background: #046a83;
+  ;
 }
 
 .nav-link {
@@ -94,13 +103,28 @@
   border: 1px solid rgb(0, 0, 0, .1);
   border-radius: 2px;
 }
-.heading1 span:hover{
+
+.heading1 span:hover {
   font-size: 2rem;
   padding: 0px 15px;
   color: #fff;
   background: #024859;
   border: 1px solid rgb(0, 0, 0, .1);
   border-radius: 2px;
+}
+.labelfont{
+  font-weight: 600;
+  font-size: 20px;
+}
+.registrationtext{
+  font-size:25px;
+}
+.navlink{
+  color:green;
+}
+.navlink:hover{
+  color:#fff;
+
 }
 
 

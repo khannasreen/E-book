@@ -1,5 +1,6 @@
-import React from 'react';
+import React from 'react'
 import logo from '../images/mylogo.png';
+import { NavLink } from 'react-router-dom';
 
 const Nabvar = () => {
   return (
@@ -24,13 +25,17 @@ const Nabvar = () => {
             </form>
           </div>
           <div className="col-md-4 my-3">
-            {/* <a href='' className='btn btn-outline-success' type='submit'/>
-            <i className="fa-solid fa-user-plus"></i>  Login */}
+          
             <button className="btn btn-outline-success" type="submit">
-            <i className="fa-solid fa-user-plus"></i>  Login
+            <NavLink className="navlink" to="login">
+              <i className="fa-solid fa-user-plus"></i>Login
+              </NavLink>  
             </button>
             <button className="btn btn-outline-success mx-2" type="submit">
+            <NavLink className="navlink" to="registration">
             <i className="fa-solid fa-right-to-bracket"></i> Register
+              </NavLink>
+            
             </button>
 
           </div>
@@ -55,31 +60,33 @@ const Nabvar = () => {
             </a> */}
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link " aria-current="page" href="#">
-                  <i className="fa-solid fa-house-chimney mx-1"></i> Home
-                </a>
+                <NavLink className="nav-link" to="/">
+                  <i className="fa-solid fa-house-chimney"></i>   Home
+                </NavLink>
+              </li>
+
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/generfiction">
+                  <i className="fa-solid fa-book mx-1"></i> Gener Fiction 
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link " aria-current="page" href="#">
-                  <i className="fa-solid fa-book mx-1"></i> Recent Books
-                </a>
+                <NavLink className="nav-link" to="literary">
+                  <i className="fa-solid fa-book-open mx-1"></i> Literary Fiction
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link " aria-current="page" href="#">
-                  <i className="fa-solid fa-book-open mx-1"></i> Latest Books
-                </a>
+              <NavLink className="nav-link" to="mainstream">
+              <i className="fa-solid fa-book-open mx-1"></i> Mainstream Fiction
+                </NavLink>
+              
               </li>
-              <li className="nav-item">
-                <a className="nav-link " aria-current="page" href="#">
-                  <i className="fa-solid fa-book-open mx-1"></i> Popular Books
-                </a>
-              </li>
-
-
-
-
             </ul>
-
+            <button type='submit' className='btn bg-primary text-white'>
+            <NavLink className="nav-link" to="addbook">
+            <i className="fa-solid fa-book mx-1"></i> Add Book
+                </NavLink>
+              </button>
           </div>
         </div>
       </nav>
@@ -88,3 +95,9 @@ const Nabvar = () => {
 }
 
 export default Nabvar
+
+
+
+
+
+

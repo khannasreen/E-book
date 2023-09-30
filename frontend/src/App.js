@@ -4,17 +4,24 @@ import Home from './components/Home';
 import Nabvar from './components/Nabvar';
 import Login from './components/Login';
 import Registration from './components/Registration';
-
+import AddBook from './components/AddBook';
+import GenerFiction from './components/GenerFiction';
+import Literary from './components/Literary';
+import MainStream from './components/MainStream';
 function App() {
   return (
 
     <BrowserRouter>
       <Nabvar />
-      {/* <Home/> */}
       <Routes>
         <Route element={<Home />} path='/' />
-        <Route element={<Login />} path='login' />
-        <Route element={<Registration />} path='registration' />
+        {/* <Route element={<Login />} path='/login' /> */}
+        <Route element={<GenerFiction />} path='generfiction' />
+        <Route element={<Literary />} path='/literary' />
+        <Route element={<MainStream />} path='/mainstream' />
+        <Route element={<Login />} path='/login' />
+        <Route element={<Registration />} path='/registration' />
+        <Route element={<AddBook />} path='/addbook' />
       </Routes>
 
     </BrowserRouter>

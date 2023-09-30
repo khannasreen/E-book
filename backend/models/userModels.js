@@ -9,23 +9,11 @@ const mySchema = new Schema({
     Language: String,
     Rating: String,
     Reviews: String,
+    category:String,
+    Price:Number,
 });
 
 module.exports = model('ebook', mySchema);
 
 
 
-
-// sir code
-// const { model, Schema } = require('../connection');
-
-// const mySchema = new Schema({
-//     name : String,
-//     email : String,
-//     password : String,
-//     age : Number,
-//     avatar: String
-// });
-
-// module.exports = model( 'user', mySchema );
-// sir code end

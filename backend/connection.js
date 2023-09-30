@@ -15,14 +15,3 @@ mongoose.connect(url)
 module.exports = mongoose;
 
 
-// sir code
-// mongoose.connect(url)
-// .then((result) => {
-//     console.log('database connected successfully');
-// })
-// .catch((err) => {
-//     console.log(err);
-// });
-
-// module.exports = mongoose;
-// sir code end
