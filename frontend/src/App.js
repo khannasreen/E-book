@@ -20,7 +20,7 @@ function App() {
         <Route element={<Literary />} path='/literary' />
         <Route element={<MainStream />} path='/mainstream' />
         <Route element={<Login />} path='/login' />
-        <Route element={<Registration />} path='/registration' />
+        <Route element={<Registration />} path='/s' />
         <Route element={<AddBook />} path='/addbook' />
       </Routes>
 

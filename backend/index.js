@@ -1,6 +1,6 @@
 // import expree
-const express  = require ('express');
-const userRouter = require('./router/userRouter');
+const express = require('express');
+const bookRouter = require('./router/bookRouter');
 
 
 // initialize express
@@ -12,11 +12,11 @@ const port = 5000;
 
 // middlewares
 app.use(express.json());
-app.use('/ebook', userRouter);
+app.use('/ebook', bookRouter);
 
 
 // Starting the server
-app.listen(port, () => {console.log('express server started')});
+app.listen(port, () => { console.log('express server started') });
 
 
 
